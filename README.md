@@ -1,4 +1,4 @@
-# Anycubic Log Decryptor
+# 3D Printers Log Decryptor
 
 Static, client-side viewer for `log_1` / `log_2` files exported from some 3D printers
 via the USB export menu. Decryption happens entirely in the browser using the
