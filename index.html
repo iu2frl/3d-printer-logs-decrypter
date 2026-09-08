@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anycubic Log Decryptor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Anycubic Log Decryptor</h1>
+    <p>
+      Decrypts log files (example: <code>log_1</code> and <code>log_2</code>) exported from some Anycubic or Elegoo printers
+      (For example, Kobra 2 Pro with FW 3.0.5+, Centauri Carbon with FW 1.4.49+) via the USB export menu. 
+      Everything runs locally in your browser — no file is ever uploaded anywhere.
+    </p>
+
+    <div id="drop-zone">
+      <p>Drop <code>log_1</code> / <code>log_2</code> here, or</p>
+      <input type="file" id="file-input">
+    </div>
+
+    <div id="status"></div>
+
+    <div id="output-wrap" hidden>
+      <div id="output-toolbar">
+        <button id="download-btn">Download as .txt</button>
+        <button id="copy-btn">Copy to clipboard</button>
+      </div>
+      <pre id="output"></pre>
+    </div>
+
+    <footer>
+      Key/IV credit: Anycubic log AES key/IV published by a community member on the
+      <a href="https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658/106" target="_blank" rel="noopener">Klipper forum</a>.
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
